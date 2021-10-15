@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Grafico de barras</title>
+</head>
+<body>
+    <div class="card ">
+        <form action="" class="form-container">
+            <h2>Grafico de barras</h2>
+                <p> Herramienta para hacer un grafico de barras, debes ingresar pares de valores deparados por coma, el primero sera la etiqueta 
+                    de la barra el segundo el valor de frecuencia, </p>
+                
+            <label for="value" class="requerimiento">
+                <span class="requerimiento-label">Ingresa pares de valores separados por coma</span> 
+                <input class="requerimiento-input" type="text" name="value" id="value" placeholder="tag1,10,tag2,20,tag3,25,tag4,15">
+            </label> 
+            
+            <button class="requerimiento-button" id="calcular">Graficar</button>
+            <button class="hide-button" id="graficar">Graficar</button>
+        </form>
+        <!-- <div class="card-header">
+            Grafico de barras:
+        </div> -->
+        <div class="chart ">
+            <canvas id="barchart" width="640" height="480"></canvas>
+        </div>
+    </div>
+    <script src="./dist/src/index.js" type="module"></script>
+</body>
+</html>

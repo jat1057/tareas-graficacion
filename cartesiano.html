@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Coordenada en el plano</title>
+</head>
+<body>
+    <div class="card ">
+        <form action="" class="form-container">
+            <h2>Coordenada en el plano</h2>
+                <p> Escribe un par coordenado, sepáralo con coma </p>
+                
+            <label for="value" class="requerimiento">
+                <span class="requerimiento-label">Par coordenado:</span> 
+                <input class="requerimiento-input" type="text" name="value" id="value" placeholder="x,y">
+            </label> 
+            
+            <button class="requerimiento-button" id="graficar">Graficar</button>
+            <button class="hide-button" id="calcular">Graficar</button>
+        </form>
+        <!-- <div class="card-header">
+            Grafico de barras:
+        </div> -->
+        <div class="chart ">
+            <canvas id="barchart" width="640" height="480"></canvas>
+        </div>
+    </div>
+    <script src="./dist/src/index.js" type="module"></script>
+</body>
+</html>
