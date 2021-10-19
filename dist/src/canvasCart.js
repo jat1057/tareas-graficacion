@@ -42,7 +42,7 @@ var CanvasCart = /** @class */ (function () {
         this.graphics.strokeStyle = 'black';
         for (var x = -this.rWidth / 2 + 1; x <= this.rWidth / 2 - 1; x += this.pasoX) {
             this.drawLine(this.iX(x), this.iY(-0.2), this.iX(x), this.iY(0.2));
-            this.graphics.strokeText(x.toFixed(0) + "", this.iX(x), this.iY(0) + 10);
+            this.graphics.strokeText(x.toFixed(1) + "", this.iX(x), this.iY(0) + 10);
         }
         var cont = 0;
         for (var y = -this.rHeight / 2 + 1; y <= this.rHeight / 2 - 1; y += this.pasoY) {
@@ -51,7 +51,7 @@ var CanvasCart = /** @class */ (function () {
             if (cont === 11)
                 continue;
             else
-                this.graphics.strokeText(y.toFixed(0) + "", this.iX(0) - 13, this.iY(y) + 10);
+                this.graphics.strokeText(y.toFixed(1) + "", this.iX(0) - 13, this.iY(y) + 10);
         }
         this.graphics.strokeText("X", this.iX(this.rWidth / 2 - 2), this.iY(0) - 10);
         this.graphics.strokeText("Y", this.iX(0) + 10, this.iY(this.rHeight / 2 - 2));
