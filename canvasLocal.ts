@@ -1,3 +1,4 @@
+//tarea numero 1 graficacion
 export class CanvasLocal {
   protected graphics: CanvasRenderingContext2D;
   protected rWidth: number;
